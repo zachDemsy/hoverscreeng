@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+:root {
+    --color-body: #000000;
+    --color-heading: #f9fcef;
+    --color-background: #252525;
+    --color-p: #989898;
+    --color-base: #2feb0a;
+    --color-brand2: #181818;
+}
+
+body {
+    background-color: var(--color-body);
+}
+
+.spotify-playlist {
+    padding: 20px 40px;
+}
+
+.spotify-playlist h2 {
+    color: var(--color-heading);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .list {
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .list .item {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: var(--color-brand2);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover {
+    background-color: var(--color-background);
+}
+
+.spotify-playlist .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item .play {
+    position: relative;
+}
+
+.spotify-playlist .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: var(--color-base);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlist .list .item .play .aa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: var(--color-base);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover .play .aa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlist.list.item h4 {
+    color: var(--color-heading);
+    font-size: 14px;
+    margin-bottom: 14px;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlist.list.item p {
+    color: var(--color-p);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
