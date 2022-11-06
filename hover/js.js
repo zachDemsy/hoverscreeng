@@ -1,14 +1,13 @@
 
-var myAudio = document.getElementsById("fa fa-play");
-myAudion.onclick = function aud_play_pause() {
-    
-    if (myAudio.paused) {
-        $('#stateicon').removeClass('fa fa-play');
-        $('#stateicon').addClass('fa fa-pause');
-        myAudio.play();
+var myAudio = document.getElementById("play");
+function aud_play_pause() {
+    if (myAudio.value == undefined) myAudio.value = "0";
+    if (myAudio.value === "0") {
+        myAudio.setAttribute("class", 'fa fa-pause');
+        myAudio.value = "1";
     } else {
-        $('#stateicon').removeClass('fa fa-pause');
-        $('#stateicon').addClass('fa fa-play');
-        myAudio.pause();   
+        myAudio.setAttribute("class", 'fa fa-play');
+        myAudio.value = "0";
     } 
 }
+
