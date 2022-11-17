@@ -76,6 +76,8 @@ body {
 }
 
 .spotify-playlist .list .item .play .aa {
+    height: 2px;
+    width: auto;
     position: absolute;
     right: 10px;
     top: -60px;
