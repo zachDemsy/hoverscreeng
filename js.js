@@ -1,12 +1,6 @@
-var myAudio = document.getElementById("play");
-function aud_play_pause() {
-    if (myAudio.value == undefined) myAudio.value = "0";
-    if (myAudio.value === "0") {
-        myAudio.setAttribute("class", 'fa fa-pause');
-        myAudio.value = "1";
-    } else {
-        myAudio.setAttribute("class", 'fa fa-play');
-        myAudio.value = "0";
-    } 
+function aud_play_pause(get) {
+    if (get.className == "fa fa-play") get.classList.replace("fa-play", "fa-pause");
+    else get.classList.replace("fa-pause", "fa-play");
+
 }
 
